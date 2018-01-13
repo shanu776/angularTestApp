@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule, Component } from '@angular/core';
 import { RouterModule } from '@angular/router'
 import {ReactiveFormsModule, FormsModule} from '@angular/forms'
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'
 
 
 import { AppComponent } from './app.component';
@@ -28,6 +29,7 @@ import { BaseconComponent } from './basecon/basecon.component';
     BrowserModule,
     ReactiveFormsModule,
     FormsModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot([
      {
        path:'member',
