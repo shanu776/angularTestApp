@@ -1,0 +1,13 @@
+<form class="container" [formGroup] ="form" (ngSubmit)="onSubmit(form.value)">
+  <input type="text" name="firstname" placeholder="Firstname" formControlName="firstname">
+  <br>
+  <input type="text" name="lastname" placeholder="Lastname" formControlName="lastname">
+  <br>
+  <select name="languages" formControlName="languages">
+    <option value="c">c</option>
+    <option value="java">java</option>
+    <option value="angular">angular</option>
+  </select>
+  <br><br>
+  <input type="submit" [disabled]="!form.valid" value="save">
+</form>
